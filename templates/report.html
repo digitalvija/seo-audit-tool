@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEO Report</title>
+</head>
+<body>
+    <h1>SEO Report for {{ url }}</h1>
+    <ul>
+        {% for key, value in report.items() %}
+            <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">← Run Another Audit</a>
+</body>
+</html>
